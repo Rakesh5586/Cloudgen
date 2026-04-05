@@ -277,7 +277,7 @@ export default function Header() {
         <div className={styles.headerLogo}>
           <a href="/" className={styles.logoLink}>
             <img 
-              src="/images/cloudgenlogoremovebg.png" 
+              src="/images/cloudgen00.jpeg" 
               alt="CloudGen Logo" 
               className={styles.headerLogoImg} 
             />

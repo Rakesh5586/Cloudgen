@@ -78,7 +78,7 @@
 }
 
 .navItem:hover {
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 .navItem::before {
@@ -88,7 +88,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #e302e3;
+  background: #f69b3f;
   transition: width 0.5s ease;
 }
 
@@ -196,8 +196,8 @@
   font-size: 0.95rem;
   font-weight: 700;
   font-family: 'Play', sans-serif;
-  color: #e302e3;
-  border-bottom: 2px solid #e302e3;
+  color: #f69b3f;
+  border-bottom: 2px solid #f69b3f;
   padding-bottom: 0.7rem;
 }
 
@@ -240,7 +240,7 @@
 
 .aimlItem .megaMenuLink:hover .itemIcon {
   background: rgba(0, 212, 255, 0.3);
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 /* Digital Engineering Menu Specific Styles */
@@ -254,7 +254,7 @@
 
 .deItem .megaMenuLink:hover .itemIcon {
   background: rgba(0, 212, 255, 0.3);
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 /* DevOps Menu Specific Styles */
@@ -268,7 +268,7 @@
 
 .devopsItem .megaMenuLink:hover .itemIcon {
   background: rgba(0, 212, 255, 0.3);
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 /* Cloud Menu Specific Styles */
@@ -282,7 +282,7 @@
 
 .cloudItem .megaMenuLink:hover .itemIcon {
   background: rgba(0, 212, 255, 0.3);
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 /* Blockchain Menu Specific Styles */
@@ -296,7 +296,7 @@
 
 .blockchainItem .megaMenuLink:hover .itemIcon {
   background: rgba(0, 212, 255, 0.3);
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 .itemIcon {
@@ -327,7 +327,7 @@
 }
 
 .aimlItem .megaMenuLink:hover .itemName {
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 .itemDesc {
@@ -343,7 +343,7 @@
 
 /* Digital Engineering hover styles */
 .deItem .megaMenuLink:hover .itemName {
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 .deItem .megaMenuLink:hover .itemDesc {
@@ -352,7 +352,7 @@
 
 /* DevOps hover styles */
 .devopsItem .megaMenuLink:hover .itemName {
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 .devopsItem .megaMenuLink:hover .itemDesc {
@@ -361,7 +361,7 @@
 
 /* Cloud hover styles */
 .cloudItem .megaMenuLink:hover .itemName {
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 .cloudItem .megaMenuLink:hover .itemDesc {
@@ -370,7 +370,7 @@
 
 /* Blockchain hover styles */
 .blockchainItem .megaMenuLink:hover .itemName {
-  color: #e302e3;
+  color: #f69b3f;
 }
 
 .blockchainItem .megaMenuLink:hover .itemDesc {
