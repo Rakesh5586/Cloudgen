@@ -36,8 +36,8 @@
 }
 
 .headerLogoImg {
-  height: 70px;
-  width: 180px;
+  height: 60px;
+  width: 100%;
   transition: all 0.3s ease;
 }
 
