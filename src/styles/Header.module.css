@@ -2,19 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 .header {
-  background: linear-gradient(135deg, #000 0%, #1a1f3a 100%);
+  background: #000;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
   position: sticky;
   top: 0;
   z-index: 999;
   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); */
   font-family: 'Play', sans-serif;
+  /* border-bottom: 1px solid rgba(128, 128, 128, 0.438); */
 }
 
 .headerContainer {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

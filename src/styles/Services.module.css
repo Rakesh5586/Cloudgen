@@ -1,0 +1,225 @@
+/* ===== SERVICES SECTION ===== */
+
+.services {
+  background: #000;
+  padding: 3rem 2rem 3rem;
+  font-family: 'Play', sans-serif;
+}
+
+/* ── Section Heading ── */
+.servicesHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.servicesTitle {
+  font-family: 'Play', sans-serif;
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+.servicesSubtitle {
+  font-family: 'Play', sans-serif;
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* ── Grid Wrapper ── */
+.servicesGrid {
+  max-width: 1400px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ── Row 1 ── */
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.row1Right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ── Row 2 ── */
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* ── Base Card ── */
+.card {
+  position: relative;
+  background: #0d0d14;
+  border: 3px solid rgba(255, 255, 255, 0.932);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.6rem;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  border-color: #0704c9;
+  transform: translateY(-3px);
+}
+
+/* ── Large Card (row1 left) ── */
+.cardLarge {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cardImgOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.92) 0%,
+    rgba(0, 0, 0, 0.55) 50%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+  z-index: 0;
+}
+
+/* ── Small Cards (row1 right — stacked) ── */
+.cardSmall {
+  flex: 1;
+}
+
+/* ── Medium Cards (row 2 — 3 cols) ── */
+.cardMed {
+  min-height: 260px;
+}
+
+/* ── Wide Card (row 3 — full width) ── */
+.cardWide {
+  min-height: 160px;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cardWide .cardBody {
+  max-width: 100%;
+}
+
+/* ── Card Body ── */
+.cardBody {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cardTitle {
+  font-family: 'Play', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.cardDesc {
+  font-family: 'Play', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.5;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Play', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f5a623;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: color 0.25s ease, letter-spacing 0.25s ease;
+}
+
+.cardLink:hover {
+  color: #ffbe55;
+  letter-spacing: 0.1em;
+}
+
+/* ── Circuit Icon ── */
+.cardIcon {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  width: 28px;
+  height: 28px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+/* Wide card icon override */
+.cardWide .cardIcon {
+  position: relative;
+  bottom: unset;
+  right: unset;
+  align-self: flex-end;
+  flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .row1 {
+    grid-template-columns: 1fr;
+  }
+
+  .cardLarge {
+    min-height: 320px;
+  }
+
+  .row2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .servicesGrid{
+    padding: 0 0rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+
+  .cardWide {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cardWide .cardBody {
+    max-width: 100%;
+  }
+
+  .servicesGrid {
+    padding: 0 0rem;
+  }
+}
