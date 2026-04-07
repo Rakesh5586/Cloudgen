@@ -1,0 +1,81 @@
+/* ===== STATS MARQUEE ===== */
+
+.stats {
+  background: #0a0a0a;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 3rem 2rem 3rem;
+}
+
+/* ── Scrolling track ── */
+.track {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 24s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Card ── */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.8rem 2.4rem;
+  min-width: 280px;
+  max-width: 320px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+  font-family: 'Play', sans-serif;
+}
+
+/* ── Top row: number + label ── */
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.number {
+  font-family: 'Play', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.label {
+  font-family: 'Play', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  white-space: pre-line;
+  padding-top: 0.1rem;
+  text-transform: uppercase;
+}
+
+/* ── Description ── */
+.desc {
+  font-family: 'Play', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.6;
+  max-width: 260px;
+}
