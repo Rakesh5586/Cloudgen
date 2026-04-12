@@ -1,0 +1,156 @@
+/* ===== INDUSTRIES SECTION ===== */
+
+.industries {
+  background: #202020;
+  padding: 5rem 2rem;
+  font-family: 'Play', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.industriesInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+/* ── Header ── */
+.industriesHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.industriesTitle {
+  font-family: 'Play', sans-serif;
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+.industriesSubtitle {
+  font-family: 'Play', sans-serif;
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* ── Grid ── */
+.industriesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+/* ── Card ── */
+.industryCard {
+  position: relative;
+  background: #111118;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 2rem 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.85rem;
+  cursor: default;
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.industryCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(0, 123, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.industryCard:hover::before {
+  left: 100%;
+}
+
+.industryCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
+  border-color: rgba(0, 123, 255, 0.3);
+  background: #13131f;
+}
+
+
+/* ── Icon ── */
+.cardIconWrap {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.cardIconWrap svg {
+  width: 40px;
+  height: 40px;
+}
+
+.industryCard:hover .cardIconWrap {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* ── Text ── */
+.cardLabel {
+  font-family: 'Play', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.cardDesc {
+  font-family: 'Play', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .industriesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .industriesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+
+  .industries {
+    padding: 4rem 1.25rem;
+  }
+
+  .industriesInner {
+    padding: 0 0rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .industriesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+
+  .industryCard {
+    padding: 1.5rem 1rem;
+  }
+
+  .industriesInner {
+    padding: 0 0rem;
+  }
+
+}

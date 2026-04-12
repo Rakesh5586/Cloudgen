@@ -1,0 +1,357 @@
+/* ===== FOOTER ===== */
+
+.footer {
+  background: #0a0a0a;
+  font-family: 'Play', sans-serif;
+  color: #ffffff;
+}
+
+/* ── Top Bar ── */
+.topBar {
+  padding: 2.5rem 2rem;
+}
+
+.topBarInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Logo + tagline */
+.topLogo {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.logoImg {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.topTagline {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.4;
+  max-width: 400px;
+}
+
+.topTagline span {
+  color: #0704c9;
+  font-weight: 700;
+}
+
+/* Contact box */
+.contactBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #111118;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: border-color 0.25s ease, background 0.25s ease;
+  white-space: nowrap;
+}
+
+.contactBox:hover {
+  border-color: rgba(7, 4, 201, 0.5);
+  background: #13131f;
+}
+
+.contactIcon {
+  width: 40px;
+  height: 40px;
+  background: #0704c9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contactIcon svg {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.contactLabel {
+  display: block;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+
+.contactNumber {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: end;
+  color: #ffffff;
+}
+
+/* Social box */
+.socialBox {
+  background: #111118;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 200px;
+}
+
+.socialLabel {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.socialIcon {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  /* background: #000000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.socialIcon:hover {
+  background: #0704c9;
+  color: #ffffff;
+}
+
+.socialIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  max-width: 1335px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ── Links Section ── */
+.linksSection {
+  padding: 1rem 2rem;
+}
+
+.linksInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+/* Column */
+.colTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.65rem;
+  letter-spacing: 0.01em;
+}
+
+.colDivider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+}
+
+.colList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.colLink {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  line-height: 1.4;
+}
+
+.colLink:hover {
+  color: #ffffff9c;
+}
+
+.arrow {
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.colLink:hover .arrow {
+  color: #0704c9;
+}
+
+/* ── Compliance Badges ── */
+.complianceWrap {
+  margin-top: 1rem;
+}
+
+.complianceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.complianceBadge {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 0.85rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.complianceBadge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+}
+
+.complianceImg {
+  width: 100%;
+  height: auto;
+  max-height: 45px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ── Bottom Bar ── */
+.bottomBar {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.copyright {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.bottomLink {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.bottomLink:hover {
+  color: #ffffff;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .topBarInner {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    padding: 0 0rem;
+  }
+
+  .linksInner {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0rem;
+  }
+
+  .topLogo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .topBar {
+    padding: 2rem 1rem;
+  }
+
+  .topBarInner {
+    padding: 0 0rem;
+  }
+
+  .linksSection {
+    padding: 2rem 1rem;
+  }
+
+  .linksInner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 0rem;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .bottomLinks {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .socialBox {
+    width: 100%;
+  }
+
+  .topLogo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactBox {
+    width: 100%;
+    justify-content: center;
+  }
+}
